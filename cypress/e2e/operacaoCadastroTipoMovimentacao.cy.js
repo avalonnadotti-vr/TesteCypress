@@ -6,6 +6,7 @@ describe('Testes de Operação - Cadastro - Tipo de Movimentação', () => {
     cy.visitTipoMovimentacao()
     cy.get('vr-nav-button-add > .main-nav-action__btn--container > vrc-icon > .vr').click()
     cy.get('input[placeholder="Descrição"]').type('Teste QA [AVALON NADOTTI]')
+    cy.get('div.notifications-container').should('have.value', 'Salvo com sucesso!')
 
     cy.get('div.col-sm-2 div.form-group div.select2 span.select2-selection__arrow').click()
     cy.get('div.col-sm-2 div.form-group div.select2 li.select2-results__option div.select2-label-content')
