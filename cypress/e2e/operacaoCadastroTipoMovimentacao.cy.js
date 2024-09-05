@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
 describe('Testes de Operação - Cadastro - Tipo de Movimentação', () => {
-  it('Cadastro, consulta e Exclusão de oooooooooooo', () => {
+  it('Cadastro, consulta e Exclusão de Tipo de Movimentação', () => {
     cy.Login()
     cy.visitTipoMovimentacao()
     cy.get('vr-nav-button-add > .main-nav-action__btn--container > vrc-icon > .vr').click()
